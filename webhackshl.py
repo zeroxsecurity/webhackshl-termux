@@ -26,6 +26,11 @@ from modules import checker
 from modules import hashid
 from modules import sstimod
 
+#Definición de directorios de trabajo para Termux
+global PREFIX, HOME
+PREFIX="/data/data/com.termux/files/usr"
+HOME="/data/data/com.termux/files/home"
+
 #Definimos la versión
 version='v1.0'
 

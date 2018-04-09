@@ -81,15 +81,21 @@ def wordpresscan():
     if resp=="y":
         web=portsmod.host()
         logsalida=logs.randomarch("wpscan/","WPSCAN",".log")
-        subprocess.call(["ruby",HOME+"/.wpscan/wpscan.rb","-u",web,"--enumerate","p","--enumerate","t","--enumerate","u","--log",logsalida])
+        owd=os.getcwd()
+        os.chdir("/data/data/com.termux/files/home/.wpscan")
+        subprocess.call(["ruby","wpscan.rb","-u",web,"--enumerate","p","--enumerate","t","--enumerate","u","--log",logsalida])
         print ""
         checker.cAmarillo("--------------------------------------------------------")
         checker.cRojo(["Tu log se ha Guardado en la ruta: ",logsalida])
         checker.cAmarillo("--------------------------------------------------------")
+        os.chdir(owd)
         print ""
     elif resp=="n":
         web=portsmod.host()
+        owd=os.getcwd()
+        os.chdir("/data/data/com.termux/files/home/.wpscan")
         subprocess.call(["ruby",HOME+"/.wpscan/wpscan.rb","-u",web,"--enumerate","p","--enumerate","t","--enumerate","u"])
+        os.chdir(owd)
     execute()
 
 def wordpresscantor():
@@ -100,15 +106,21 @@ def wordpresscantor():
         logsalida=logs.randomarch("wpscan/","WPSCAN",".log")
         web=portsmod.host()
         checker.cAmarillo("Buscando vulnerabilidades en el sitio web usando wpscan...")
+        owd=os.getcwd()
+        os.chdir("/data/data/com.termux/files/home/.wpscan")
         subprocess.call(["ruby",HOME+"/.wpscan/wpscan.rb","-u",web,"--enumerate","p","--enumerate","t","--enumerate","u","--proxy","socks5://127.0.0.1:9050","--log",logsalida])
         print ""
         checker.cAmarillo("--------------------------------------------------------")
         checker.cRojo(["Tu log se ha Guardado en la ruta: ",logsalida])
         checker.cAmarillo("--------------------------------------------------------")
+        os.chdir(owd)
         print ""
     elif resp=="n":
         web=portsmod.host()
+        owd=os.getcwd()
+        os.chdir("/data/data/com.termux/files/home/.wpscan")
         subprocess.call(["ruby",HOME+"/.wpscan/wpscan.rb","-u",web,"--enumerate","p","--enumerate","t","--enumerate","u","--proxy","socks5://127.0.0.1:9050"])
+        os.chdir(owd)
     execute()
 
 def execute():
