@@ -15,6 +15,11 @@
 import subprocess
 import checker
 
+#Definición de directorios de trabajo para Termux
+global PREFIX, HOME
+PREFIX="/data/data/com.termux/files/usr"
+HOME="/data/data/com.termux/files/home"
+
 def rsk():
     try:
         global risk

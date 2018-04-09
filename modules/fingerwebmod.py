@@ -18,6 +18,11 @@ import portsmod
 import checker
 from modules import logs
 
+#Definición de directorios de trabajo para Termux
+global PREFIX, HOME
+PREFIX="/data/data/com.termux/files/usr"
+HOME="/data/data/com.termux/files/home"
+
 def whatw():
     checker.cRojo("Desea Guardar el logs de la informacion? y/n : ")
     resp=raw_input("Introduce tu Respuesta y/n : ")
