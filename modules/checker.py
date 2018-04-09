@@ -134,7 +134,7 @@ def installall(DISTRO):
 
 #Definimos la función que verifica si todo lo necesario está instalado en el sistema.
 def check():
-    if isnm and isfierce and ismap and isenum and isnikto and iswhatw and iswp and isrb and isgit and iscurl and istor and isgzip and isjohn:
+    if isnm and isfierce and ismap and isenum and isnikto and iswhatw and iswp and isrb and isgit and iscurl and istor and isjohn:
         cVerde("Todo lo necesario esta instalado, procediendo.")
     else:
         distribucion()
