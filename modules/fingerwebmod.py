@@ -94,7 +94,7 @@ def wordpresscan():
         web=portsmod.host()
         owd=os.getcwd()
         os.chdir("/data/data/com.termux/files/home/.wpscan")
-        subprocess.call(["ruby",HOME+"/.wpscan/wpscan.rb","-u",web,"--enumerate","p","--enumerate","t","--enumerate","u"])
+        subprocess.call(["ruby","wpscan.rb","-u",web,"--enumerate","p","--enumerate","t","--enumerate","u"])
         os.chdir(owd)
     execute()
 
@@ -108,7 +108,7 @@ def wordpresscantor():
         checker.cAmarillo("Buscando vulnerabilidades en el sitio web usando wpscan...")
         owd=os.getcwd()
         os.chdir("/data/data/com.termux/files/home/.wpscan")
-        subprocess.call(["ruby",HOME+"/.wpscan/wpscan.rb","-u",web,"--enumerate","p","--enumerate","t","--enumerate","u","--proxy","socks5://127.0.0.1:9050","--log",logsalida])
+        subprocess.call(["ruby","wpscan.rb","-u",web,"--enumerate","p","--enumerate","t","--enumerate","u","--proxy","socks5://127.0.0.1:9050","--log",logsalida])
         print ""
         checker.cAmarillo("--------------------------------------------------------")
         checker.cRojo(["Tu log se ha Guardado en la ruta: ",logsalida])
@@ -119,7 +119,7 @@ def wordpresscantor():
         web=portsmod.host()
         owd=os.getcwd()
         os.chdir("/data/data/com.termux/files/home/.wpscan")
-        subprocess.call(["ruby",HOME+"/.wpscan/wpscan.rb","-u",web,"--enumerate","p","--enumerate","t","--enumerate","u","--proxy","socks5://127.0.0.1:9050"])
+        subprocess.call(["ruby","wpscan.rb","-u",web,"--enumerate","p","--enumerate","t","--enumerate","u","--proxy","socks5://127.0.0.1:9050"])
         os.chdir(owd)
     execute()
 
