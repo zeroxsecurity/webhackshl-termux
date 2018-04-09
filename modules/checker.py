@@ -146,7 +146,7 @@ def check():
 #Revisamos que TOR esté corriendo en el sistema y si no lo está, lo iniciamos.
 def dtor():
     cVerde("Verificando que el servicio TOR esté activo...")
-    os.system("tor --quiet")
+    os.system("tor --quiet &")
     tor=os.system("ps -A| grep -q tor")
     if tor == 0:
         cVerde("0K - TOR")
