@@ -2,12 +2,16 @@
 
 WebHackSHL-Termux es un conjunto de herramientas desarrollado por Security Hack Labs, para realizar auditorias de seguridad web desde basicas hasta avanzadas, diseñado especialmente para sistemas Android. La finalidad de esta herramienta no es fomentar el número de <em>script kiddies</em> y/o <em>crackers</em>. Antes de descargarla tómese el tiempo de leer un poco el código y así mismo entender su funcionamiento, si usted piensa descargar esta herramienta para llevar a cabo actividades ilegales y/o delictivas mejor absténgase de hacerlo. Esta herramienta fue creada con fines éticos y profesionales, también cómo ayuda a especialistas y/o principiantes de Seguridad Informática.
 
-#Prerequisitos.
+# Prerequisitos.
 
 Esta herramienta funciona en Android usando el emulador Termux, otros emuladores no son soportados. Para que la herramienta funcione usted necesita tener instalado Termux y en Termux los paquetes git y python2. Es tan simple cómo hacer lo siguiente:</br>
 
 1. Abra Termux en su Android.</br>
 2. Ejecute la siguiente orden en Termux: pkg install git python2</br>
+
+# Instalación.
+
+Sigue los pasos que encontrarás en https://www.securityhacklabs.net/2018/04/09/nuestra-herramienta-de-hacking-para-android/
 
 # Uso de la herramienta
 Teclee en la terminal de termux:</br>
@@ -36,6 +40,5 @@ Foro: https://foro.securityhacklabs.net/</br>
 
 # Capturas de pantalla.
 
-![Alt text](https://i.imgur.com/QhZEVik.png "Optional title")
 ![Alt text](https://i.imgur.com/0tAFi0k.png "Optional title")
 ![Alt text](https://i.imgur.com/y0DeXeA.png "Optional title")
