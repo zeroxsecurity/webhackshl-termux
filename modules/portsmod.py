@@ -143,7 +143,7 @@ def enumdns():
         host()
         logsalida=logs.randomarch("dnsenum/","DNSENUM",".xml")
         checker.cAmarillo("Enumerando DNS's")
-        subprocess.call(["bash","dnsenum",target,"-o",logsalida])
+        subprocess.call(["perl",HOME+"/.dnsenum/dnsenum.pl",target,"-o",logsalida])
         print ""
         checker.cAmarillo("--------------------------------------------------------")
         checker.cRojo(["Tu log se ha Guardado en la ruta: ",logsalida])
@@ -151,7 +151,7 @@ def enumdns():
         print ""
     elif resp=="n":
         host()
-        subprocess.call(["bash","dnsenum",target])
+        subprocess.call(["perl",HOME+"/.dnsenum/dnsenum.pl",target])
 
 def bypasscloud():
     checker.cRojo("Desea Guardar el logs de la informacion? y/n : ")
