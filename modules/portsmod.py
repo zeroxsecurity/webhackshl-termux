@@ -17,6 +17,11 @@ import subprocess
 import checker
 from modules import logs
 
+#Definición de directorios de trabajo para Termux
+global PREFIX, HOME
+PREFIX="/data/data/com.termux/files/usr"
+HOME="/data/data/com.termux/files/home"
+
 def host():
     global target
     target=raw_input("Introduce el host al que deseas hacerle el scan: ")
