@@ -67,7 +67,7 @@ def updatetools(DISTRO):
         cAmarillo("Actualizando tu lista de paquetes ...")
         os.system("pkg update")
         cAmarillo("Actualizando Herramientas del sistema...")
-        installcorrect=os.system("pkg install util-linux perl clang  nmap make ruby ruby-dev libxslt libxslt-dev git curl tor john python python2 libyaml-dev libandroid-glob libandroid-glob-dev \
+        installcorrect=os.system("pkg install util-linux perl clang  nmap make ruby ruby-dev libxslt libxslt-dev git curl tor python python2 libyaml-dev libandroid-glob libandroid-glob-dev \
          && pip3 install fierce -U \
          && pip2 install requests flask -U \
          && cpan install Net::IP Net::DNS Net::Netmask XML::Writer String::Random \
