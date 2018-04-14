@@ -79,7 +79,7 @@ def updatetools(DISTRO):
          && cd $HOME/.whatweb && git pull \
          && cd $HOME/.wpscan && gem install bundler && bundle install --without test \
          ")
-        if correctinstall==0:
+        if installcorrect==0:
             print ""
             cVerde("La actualizacion se realizo correctamente.")
             cVerde("Todo lo necesario esta actualizado, procediendo.")
