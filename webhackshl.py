@@ -32,7 +32,7 @@ PREFIX="/data/data/com.termux/files/usr"
 HOME="/data/data/com.termux/files/home"
 
 #Definimos la versión
-version='v1.0'
+version='v1.5'
 
 def adjust_to_correct_appdir():
     import os, sys
