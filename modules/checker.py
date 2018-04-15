@@ -72,6 +72,7 @@ def updatetools(DISTRO):
          && pip2 install requests flask -U \
          && cpan install Net::IP Net::DNS Net::Netmask XML::Writer String::Random \
          && cd $PWD/modules/tplmap/ && git pull \
+         && cd joomlavs/ && git pull \
          && cd $HOME/.sqlmap && git pull \
          && cd $HOME/.dnsenum && git pull \
          && cd $HOME/.nikto && git pull \
